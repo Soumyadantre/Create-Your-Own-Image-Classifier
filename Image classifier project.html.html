@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>4af90ae984b443ed9352ea2ed4353090</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="developing-an-ai-application" class="cell markdown">
+<h1>Developing an AI application</h1>
+<p>Going forward, AI algorithms will be incorporated into more and more
+everyday applications. For example, you might want to include an image
+classifier in a smart phone app. To do this, you'd use a deep learning
+model trained on hundreds of thousands of images as part of the overall
+application architecture. A large part of software development in the
+future will be using these types of models as common parts of
+applications.</p>
+<p>In this project, you'll train an image classifier to recognize
+different species of flowers. You can imagine using something like this
+in a phone app that tells you the name of the flower your camera is
+looking at. In practice you'd train this classifier, then export it for
+use in your application. We'll be using <a
+href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html">this
+dataset</a> of 102 flower categories, you can see a few examples
+below.</p>
+<p><img src='assets/Flowers.png' width=500px></p>
+<p>The project is broken down into multiple steps:</p>
+<ul>
+<li>Load and preprocess the image dataset</li>
+<li>Train the image classifier on your dataset</li>
+<li>Use the trained classifier to predict image content</li>
+</ul>
+<p>We'll lead you through each part which you'll implement in
+Python.</p>
+<p>When you've completed this project, you'll have an application that
+can be trained on any set of labeled images. Here your network will be
+learning about flowers and end up as a command line application. But,
+what you do with your new skills depends on your imagination and effort
+in building a dataset. For example, imagine an app where you take a
+picture of a car, it tells you what the make and model is, then looks up
+information about it. Go build your own dataset and make something
+new.</p>
+<p>First up is importing the packages you'll need. It's good practice to
+keep all the imports at the beginning of your code. As you work through
+this notebook and find you need to import a package, make sure to add
+the import up here.</p>
+</section>
+<div class="cell code" data-execution_count="36">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Imports here</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torchvision</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch <span class="im">import</span> nn, optim</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torchvision <span class="im">import</span> transforms</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torchvision.datasets <span class="im">import</span> ImageFolder</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils <span class="im">import</span> data</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os, random</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> signal</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> contextlib <span class="im">import</span> contextmanager</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>config IPCompleter.greedy<span class="op">=</span><span class="va">True</span></span></code></pre></div>
+</div>
+<section id="load-the-data" class="cell markdown">
+<h2>Load the data</h2>
+<p>Here you'll use <code>torchvision</code> to load the data (<a
+href="http://pytorch.org/docs/0.3.0/torchvision/index.html">documentation</a>).
+The data should be included alongside this notebook, otherwise you can
+<a
+href="https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz">download
+it here</a>. The dataset is split into three parts, training,
+validation, and testing. For the training, you'll want to apply
+transformations such as random scaling, cropping, and flipping. This
+will help the network generalize leading to better performance. You'll
+also need to make sure the input data is resized to 224x224 pixels as
+required by the pre-trained networks.</p>
+<p>The validation and testing sets are used to measure the model's
+performance on data it hasn't seen yet. For this you don't want any
+scaling or rotation transformations, but you'll need to resize then crop
+the images to the appropriate size.</p>
+<p>The pre-trained networks you'll use were trained on the ImageNet
+dataset where each color channel was normalized separately. For all
+three sets you'll need to normalize the means and standard deviations of
+the images to what the network expects. For the means, it's
+<code>[0.485, 0.456, 0.406]</code> and for the standard deviations
+<code>[0.229, 0.224, 0.225]</code>, calculated from the ImageNet images.
+These values will shift each color channel to be centered at 0 and range
+from -1 to 1.</p>
+</section>
+<div class="cell code" data-execution_count="37">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> <span class="st">&#39;flowers&#39;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>train_dir <span class="op">=</span> data_dir <span class="op">+</span> <span class="st">&#39;/train&#39;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>valid_dir <span class="op">=</span> data_dir <span class="op">+</span> <span class="st">&#39;/valid&#39;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>test_dir <span class="op">=</span> data_dir <span class="op">+</span> <span class="st">&#39;/test&#39;</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="38">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Define your transforms for the training, validation, and testing sets</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>train_transforms <span class="op">=</span> transforms.Compose([transforms.RandomRotation(<span class="dv">30</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                                     transforms.RandomResizedCrop(<span class="dv">224</span>),</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                                     transforms.RandomHorizontalFlip(),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                                     transforms.ToTensor(),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>                                     transforms.Normalize([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>], [<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                                     ])</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>valid_and_test_transform <span class="op">=</span> transforms.Compose([transforms.Resize(<span class="dv">255</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                                     transforms.CenterCrop(<span class="dv">224</span>),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                                     transforms.ToTensor(),</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                                     transforms.Normalize([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>], [<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                                     ])</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Load the datasets with ImageFolder</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>train_data <span class="op">=</span> ImageFolder(root<span class="op">=</span>train_dir, transform<span class="op">=</span>train_transforms)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>valid_data <span class="op">=</span> ImageFolder(root<span class="op">=</span>valid_dir, transform<span class="op">=</span>valid_and_test_transform)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>test_data <span class="op">=</span> ImageFolder(root<span class="op">=</span>test_dir, transform<span class="op">=</span>valid_and_test_transform)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Using the image datasets and the trainforms, define the dataloaders</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>train_data_loader <span class="op">=</span> data.DataLoader(train_data, batch_size<span class="op">=</span><span class="dv">64</span>, shuffle<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>valid_data_loader <span class="op">=</span> data.DataLoader(valid_data, batch_size<span class="op">=</span><span class="dv">64</span>)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>test_data_loader <span class="op">=</span> data.DataLoader(test_data, batch_size<span class="op">=</span><span class="dv">64</span>)</span></code></pre></div>
+</div>
+<section id="label-mapping" class="cell markdown">
+<h3>Label mapping</h3>
+<p>You'll also need to load in a mapping from category label to category
+name. You can find this in the file <code>cat_to_name.json</code>. It's
+a JSON object which you can read in with the <a
+href="https://docs.python.org/2/library/json.html"><code>json</code>
+module</a>. This will give you a dictionary mapping the integer encoded
+categories to the actual names of the flowers.</p>
+</section>
+<div class="cell code" data-execution_count="39">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&#39;cat_to_name.json&#39;</span>, <span class="st">&#39;r&#39;</span>) <span class="im">as</span> f:</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    cat_to_name <span class="op">=</span> json.load(f)</span></code></pre></div>
+</div>
+<section id="building-and-training-the-classifier"
+class="cell markdown">
+<h1>Building and training the classifier</h1>
+<p>Now that the data is ready, it's time to build and train the
+classifier. As usual, you should use one of the pretrained models from
+<code>torchvision.models</code> to get the image features. Build and
+train a new feed-forward classifier using those features.</p>
+<p>We're going to leave this part up to you. Refer to <a
+href="https://review.udacity.com/#!/rubrics/1663/view">the rubric</a>
+for guidance on successfully completing this section. Things you'll need
+to do:</p>
+<ul>
+<li>Load a <a
+href="http://pytorch.org/docs/master/torchvision/models.html">pre-trained
+network</a> (If you need a starting point, the VGG networks work great
+and are straightforward to use)</li>
+<li>Define a new, untrained feed-forward network as a classifier, using
+ReLU activations and dropout</li>
+<li>Train the classifier layers using backpropagation using the
+pre-trained network to get the features</li>
+<li>Track the loss and accuracy on the validation set to determine the
+best hyperparameters</li>
+</ul>
+<p>We've left a cell open for you below, but use as many as you need.
+Our advice is to break the problem up into smaller parts you can run
+separately. Check that each part is doing what you expect, then move on
+to the next. You'll likely find that as you work through each part,
+you'll need to go back and modify your previous code. This is totally
+normal!</p>
+<p>When training make sure you're updating only the weights of the
+feed-forward network. You should be able to get the validation accuracy
+above 70% if you build everything right. Make sure to try different
+hyperparameters (learning rate, units in the classifier, epochs, etc) to
+find the best model. Save those hyperparameters to use as default values
+in the next part of the project.</p>
+<p>One last important tip if you're using the workspace to run your
+code: To avoid having your workspace disconnect during the long-running
+tasks in this notebook, please read in the earlier page in this lesson
+called Intro to GPU Workspaces about Keeping Your Session Active. You'll
+want to include code from the workspace_utils.py module.</p>
+<p><strong>Note for Workspace users:</strong> If your network is over 1
+GB when saved as a checkpoint, there might be issues with saving backups
+in your workspace. Typically this happens with wide dense layers after
+the convolutional layers. If your saved checkpoint is larger than 1 GB
+(you can open a terminal and check with <code>ls -lh</code>), you should
+reduce the size of your hidden layers and train again.</p>
+</section>
+<div class="cell code" data-execution_count="40">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Build and train your network</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> torchvision.models.vgg16(pretrained<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> param <span class="kw">in</span> model.parameters():</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    param.requires_grad <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># alter the classifier so that it has 102 out features (i.e. len(cat_to_name.json))</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>number_of_flower_classes <span class="op">=</span> <span class="bu">len</span>(train_data.classes)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> nn.Sequential(nn.Linear(in_features<span class="op">=</span>in_features_of_pretrained_model, out_features<span class="op">=</span><span class="dv">2048</span>, bias<span class="op">=</span><span class="va">True</span>),</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>                           nn.ReLU(inplace<span class="op">=</span><span class="va">True</span>),</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>                           nn.Dropout(p<span class="op">=</span><span class="fl">0.2</span>),</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>                           nn.Linear(in_features<span class="op">=</span><span class="dv">2048</span>, out_features<span class="op">=</span>number_of_flower_classes, bias<span class="op">=</span><span class="va">True</span>),</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>                           nn.LogSoftmax(dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>                          )</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>model.classifier <span class="op">=</span> classifier</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="41">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Constants</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>DELAY <span class="op">=</span> INTERVAL <span class="op">=</span> <span class="dv">4</span> <span class="op">*</span> <span class="dv">60</span>  <span class="co"># Interval time in seconds</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>MIN_DELAY <span class="op">=</span> MIN_INTERVAL <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">60</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>KEEPALIVE_URL <span class="op">=</span> <span class="st">&quot;https://nebula.udacity.com/api/v1/remote/keep-alive&quot;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>TOKEN_URL <span class="op">=</span> <span class="st">&quot;http://metadata.google.internal/computeMetadata/v1/instance/attributes/keep_alive_token&quot;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>TOKEN_HEADERS <span class="op">=</span> {<span class="st">&quot;Metadata-Flavor&quot;</span>: <span class="st">&quot;Google&quot;</span>}</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Request handler</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _request_handler(headers):</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> _handler(signum, frame):</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        requests.request(<span class="st">&quot;POST&quot;</span>, KEEPALIVE_URL, headers<span class="op">=</span>headers)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> _handler</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Active session context manager</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="at">@contextmanager</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> active_session(delay<span class="op">=</span>DELAY, interval<span class="op">=</span>INTERVAL):</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    token <span class="op">=</span> requests.request(<span class="st">&quot;GET&quot;</span>, TOKEN_URL, headers<span class="op">=</span>TOKEN_HEADERS).text</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    headers <span class="op">=</span> {<span class="st">&#39;Authorization&#39;</span>: <span class="st">&quot;STAR &quot;</span> <span class="op">+</span> token}</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    delay <span class="op">=</span> <span class="bu">max</span>(delay, MIN_DELAY)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    interval <span class="op">=</span> <span class="bu">max</span>(interval, MIN_INTERVAL)</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    original_handler <span class="op">=</span> signal.getsignal(signal.SIGALRM)</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>        signal.signal(signal.SIGALRM, _request_handler(headers))</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>        signal.setitimer(signal.ITIMER_REAL, delay, interval)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">yield</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">finally</span>:</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>        signal.signal(signal.SIGALRM, original_handler)</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>        signal.setitimer(signal.ITIMER_REAL, <span class="dv">0</span>)</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep awake generator function</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> keep_awake(iterable, delay<span class="op">=</span>DELAY, interval<span class="op">=</span>INTERVAL):</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> active_session(delay, interval):</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">yield</span> <span class="cf">from</span> iterable</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="42" data-scrolled="true">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Train the model</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify criterion</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>criterion <span class="op">=</span> nn.NLLLoss()</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify optimizer, using only classifier parameters; avoid changing the rest of VGG19</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>optimizer <span class="op">=</span> optim.Adam(model.classifier.parameters(), lr<span class="op">=</span><span class="fl">0.003</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Move device to CPU before moving it to CUDA/GPU</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>device <span class="op">=</span> <span class="st">&#39;cuda&#39;</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>model.to(device)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize variables for tracking loss/steps etc.</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>epochs <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>print_every <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Activate session to keep connection alive during training</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> active_session():</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># For each epoch</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> e <span class="kw">in</span> <span class="bu">range</span>(epochs):</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>        step <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>        running_train_loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>        running_valid_loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>        <span class="co"># For each batch of images</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> images, labels <span class="kw">in</span> train_data_loader:</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>            step <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Turn model to train mode</span></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>            model.train()</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Move images and model to device</span></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>            images, labels <span class="op">=</span> images.to(device), labels.to(device)</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Zeroize gradient</span></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>            optimizer.zero_grad()</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Forward</span></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>            outputs <span class="op">=</span> model(images)</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Loss</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>            train_loss <span class="op">=</span> criterion(outputs, labels)</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Backward</span></span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>            train_loss.backward()</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Step</span></span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>            optimizer.step()</span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>            running_train_loss <span class="op">+=</span> train_loss.item()</span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> step <span class="op">%</span> print_every <span class="op">==</span> <span class="dv">0</span> <span class="kw">or</span> step <span class="op">==</span> <span class="dv">1</span> <span class="kw">or</span> step <span class="op">==</span> <span class="bu">len</span>(train_data_loader):</span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>                <span class="bu">print</span>(<span class="st">&quot;Epoch: </span><span class="sc">{}</span><span class="st">/</span><span class="sc">{}</span><span class="st"> Batch % Complete: </span><span class="sc">{:.2f}</span><span class="st">%&quot;</span>.<span class="bu">format</span>(e<span class="op">+</span><span class="dv">1</span>, epochs, (step)<span class="op">*</span><span class="dv">100</span><span class="op">/</span><span class="bu">len</span>(train_data_loader)))</span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>       </span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>        model.<span class="bu">eval</span>()</span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>            <span class="co"># For each batch of images</span></span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>            running_accuracy <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>            running_valid_loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> images, labels <span class="kw">in</span> valid_data_loader:</span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Move images and model to device</span></span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>                images, labels <span class="op">=</span> images.to(device), labels.to(device)</span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Forward</span></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a>                outputs <span class="op">=</span> model(images)</span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Loss</span></span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a>                valid_loss <span class="op">=</span> criterion(outputs, labels)</span>
+<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a>                running_valid_loss <span class="op">+=</span> valid_loss.item()</span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Accuracy</span></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a>                ps <span class="op">=</span> torch.exp(outputs)</span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>                top_p, top_class <span class="op">=</span> ps.topk(<span class="dv">1</span>, dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a>                equals <span class="op">=</span> top_class <span class="op">==</span> labels.view(<span class="op">*</span>top_class.shape)</span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>                running_accuracy <span class="op">+=</span> torch.mean(equals.<span class="bu">type</span>(torch.FloatTensor)).item()</span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Print stats</span></span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a>        average_train_loss <span class="op">=</span> running_train_loss<span class="op">/</span><span class="bu">len</span>(train_data_loader)</span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a>        average_valid_loss <span class="op">=</span> running_valid_loss<span class="op">/</span><span class="bu">len</span>(valid_data_loader)</span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a>        accuracy <span class="op">=</span> running_accuracy<span class="op">/</span><span class="bu">len</span>(valid_data_loader)</span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Train Loss: </span><span class="sc">{:.3f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(average_train_loss))</span>
+<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Valid Loss: </span><span class="sc">{:.3f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(average_valid_loss))</span>
+<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Accuracy: </span><span class="sc">{:.3f}</span><span class="st">%&quot;</span>.<span class="bu">format</span>(accuracy<span class="op">*</span><span class="dv">100</span>))</span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>    </span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch: 1/5 Batch % Complete: 0.97%
+Epoch: 1/5 Batch % Complete: 19.42%
+Epoch: 1/5 Batch % Complete: 38.83%
+Epoch: 1/5 Batch % Complete: 58.25%
+Epoch: 1/5 Batch % Complete: 77.67%
+Epoch: 1/5 Batch % Complete: 97.09%
+Epoch: 1/5 Batch % Complete: 100.00%
+Train Loss: 5.458
+Valid Loss: 1.503
+Accuracy: 60.356%
+Epoch: 2/5 Batch % Complete: 0.97%
+Epoch: 2/5 Batch % Complete: 19.42%
+Epoch: 2/5 Batch % Complete: 38.83%
+Epoch: 2/5 Batch % Complete: 58.25%
+Epoch: 2/5 Batch % Complete: 77.67%
+Epoch: 2/5 Batch % Complete: 97.09%
+Epoch: 2/5 Batch % Complete: 100.00%
+Train Loss: 1.950
+Valid Loss: 1.170
+Accuracy: 69.827%
+Epoch: 3/5 Batch % Complete: 0.97%
+Epoch: 3/5 Batch % Complete: 19.42%
+Epoch: 3/5 Batch % Complete: 38.83%
+Epoch: 3/5 Batch % Complete: 58.25%
+Epoch: 3/5 Batch % Complete: 77.67%
+Epoch: 3/5 Batch % Complete: 97.09%
+Epoch: 3/5 Batch % Complete: 100.00%
+Train Loss: 1.774
+Valid Loss: 1.001
+Accuracy: 74.413%
+Epoch: 4/5 Batch % Complete: 0.97%
+Epoch: 4/5 Batch % Complete: 19.42%
+Epoch: 4/5 Batch % Complete: 38.83%
+Epoch: 4/5 Batch % Complete: 58.25%
+Epoch: 4/5 Batch % Complete: 77.67%
+Epoch: 4/5 Batch % Complete: 97.09%
+Epoch: 4/5 Batch % Complete: 100.00%
+Train Loss: 1.634
+Valid Loss: 0.967
+Accuracy: 72.418%
+Epoch: 5/5 Batch % Complete: 0.97%
+Epoch: 5/5 Batch % Complete: 19.42%
+Epoch: 5/5 Batch % Complete: 38.83%
+Epoch: 5/5 Batch % Complete: 58.25%
+Epoch: 5/5 Batch % Complete: 77.67%
+Epoch: 5/5 Batch % Complete: 97.09%
+Epoch: 5/5 Batch % Complete: 100.00%
+Train Loss: 1.629
+Valid Loss: 0.951
+Accuracy: 76.163%
+</code></pre>
+</div>
+</div>
+<section id="testing-your-network" class="cell markdown">
+<h2>Testing your network</h2>
+<p>It's good practice to test your trained network on test data, images
+the network has never seen either in training or validation. This will
+give you a good estimate for the model's performance on completely new
+images. Run the test images through the network and measure the
+accuracy, the same way you did validation. You should be able to reach
+around 70% accuracy on the test set if the model has been trained
+well.</p>
+</section>
+<div class="cell code" data-execution_count="43">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Do validation on the test set</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Initialize variables for tracking accuracy and loss</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    running_accuracy <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    running_loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Iterate through each batch of images in the test data loader</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> images, labels <span class="kw">in</span> test_data_loader:</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Move images and labels to the device</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        images, labels <span class="op">=</span> images.to(device), labels.to(device)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Forward pass</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        outputs <span class="op">=</span> model(images)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Calculate loss</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">=</span> criterion(outputs, labels)</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>        running_loss <span class="op">+=</span> loss.item()</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Calculate accuracy</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>        ps <span class="op">=</span> torch.exp(outputs)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>        top_p, top_class <span class="op">=</span> ps.topk(<span class="dv">1</span>, dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>        equals <span class="op">=</span> top_class <span class="op">==</span> labels.view(<span class="op">*</span>top_class.shape)</span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>        running_accuracy <span class="op">+=</span> torch.mean(equals.<span class="bu">type</span>(torch.FloatTensor)).item()</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculate average loss and accuracy over the entire test data</span></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    average_loss <span class="op">=</span> running_loss <span class="op">/</span> <span class="bu">len</span>(test_data_loader)</span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    total_accuracy <span class="op">=</span> running_accuracy <span class="op">/</span> <span class="bu">len</span>(test_data_loader)</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print test results</span></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Test Loss: </span><span class="sc">{:.3f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(average_loss))</span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Test Accuracy: </span><span class="sc">{:.3f}</span><span class="st">%&quot;</span>.<span class="bu">format</span>(total_accuracy <span class="op">*</span> <span class="dv">100</span>))</span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>       </span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Test Loss: 1.022
+Test Accuracy: 81.266
+</code></pre>
+</div>
+</div>
+<section id="save-the-checkpoint" class="cell markdown">
+<h2>Save the checkpoint</h2>
+<p>Now that your network is trained, save the model so you can load it
+later for making predictions. You probably want to save other things
+such as the mapping of classes to indices which you get from one of the
+image datasets: <code>image_datasets['train'].class_to_idx</code>. You
+can attach this to the model as an attribute which makes inference
+easier later on.</p>
+<p><code>model.class_to_idx = image_datasets['train'].class_to_idx</code></p>
+<p>Remember that you'll want to completely rebuild the model later so
+you can use it for inference. Make sure to include any information you
+need in the checkpoint. If you want to load the model and keep training,
+you'll want to save the number of epochs as well as the optimizer state,
+<code>optimizer.state_dict</code>. You'll likely want to use this
+trained model in the next part of the project, so best to save it
+now.</p>
+</section>
+<div class="cell code" data-execution_count="44">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Save the checkpoint </span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>model.class_to_idx <span class="op">=</span> train_data.class_to_idx</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>checkpoint <span class="op">=</span> {<span class="st">&#39;classifier&#39;</span>: model.classifier,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>              <span class="st">&#39;state_dict&#39;</span>: model.state_dict(),</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>              <span class="st">&#39;epochs&#39;</span>: epochs,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>              <span class="st">&#39;optim_stat_dict&#39;</span>: optimizer.state_dict(),</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>              <span class="st">&#39;class_to_idx&#39;</span>: train_data.class_to_idx</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>             }</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>torch.save(checkpoint, <span class="st">&#39;checkpoint.pth&#39;</span>)</span></code></pre></div>
+</div>
+<section id="loading-the-checkpoint" class="cell markdown">
+<h2>Loading the checkpoint</h2>
+<p>At this point it's good to write a function that can load a
+checkpoint and rebuild the model. That way you can come back to this
+project and keep working on it without having to retrain the
+network.</p>
+</section>
+<div class="cell code" data-execution_count="45">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Write a function that loads a checkpoint and rebuilds the model</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_checkpoint(filepath):</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    checkpoint <span class="op">=</span> torch.load(filepath)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> torchvision.models.vgg16(pretrained<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># freeze model parameters</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> param <span class="kw">in</span> model.parameters():</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        param.requires_grad <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    model.classifier <span class="op">=</span> checkpoint[<span class="st">&#39;classifier&#39;</span>]</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    model.load_state_dict(checkpoint[<span class="st">&#39;state_dict&#39;</span>])</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    model.class_to_idx <span class="op">=</span> checkpoint[<span class="st">&#39;class_to_idx&#39;</span>]</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> model</span></code></pre></div>
+</div>
+<section id="inference-for-classification" class="cell markdown">
+<h1>Inference for classification</h1>
+<p>Now you'll write a function to use a trained network for inference.
+That is, you'll pass an image into the network and predict the class of
+the flower in the image. Write a function called <code>predict</code>
+that takes an image and a model, then returns the top <span
+class="math inline"><em>K</em></span> most likely classes along with the
+probabilities. It should look like</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>probs, classes <span class="op">=</span> predict(image_path, model)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(probs)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classes)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> [ <span class="fl">0.01558163</span>  <span class="fl">0.01541934</span>  <span class="fl">0.01452626</span>  <span class="fl">0.01443549</span>  <span class="fl">0.01407339</span>]</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> [<span class="st">&#39;70&#39;</span>, <span class="st">&#39;3&#39;</span>, <span class="st">&#39;45&#39;</span>, <span class="st">&#39;62&#39;</span>, <span class="st">&#39;55&#39;</span>]</span></code></pre></div>
+<p>First you'll need to handle processing the input image such that it
+can be used in your network.</p>
+<h2 id="image-preprocessing">Image Preprocessing</h2>
+<p>You'll want to use <code>PIL</code> to load the image (<a
+href="https://pillow.readthedocs.io/en/latest/reference/Image.html">documentation</a>).
+It's best to write a function that preprocesses the image so it can be
+used as input for the model. This function should process the images in
+the same manner used for training.</p>
+<p>First, resize the images where the shortest side is 256 pixels,
+keeping the aspect ratio. This can be done with the <a
+href="http://pillow.readthedocs.io/en/3.1.x/reference/Image.html#PIL.Image.Image.thumbnail"><code>thumbnail</code></a>
+or <a
+href="http://pillow.readthedocs.io/en/3.1.x/reference/Image.html#PIL.Image.Image.thumbnail"><code>resize</code></a>
+methods. Then you'll need to crop out the center 224x224 portion of the
+image.</p>
+<p>Color channels of images are typically encoded as integers 0-255, but
+the model expected floats 0-1. You'll need to convert the values. It's
+easiest with a Numpy array, which you can get from a PIL image like so
+<code>np_image = np.array(pil_image)</code>.</p>
+<p>As before, the network expects the images to be normalized in a
+specific way. For the means, it's <code>[0.485, 0.456, 0.406]</code> and
+for the standard deviations <code>[0.229, 0.224, 0.225]</code>. You'll
+want to subtract the means from each color channel, then divide by the
+standard deviation.</p>
+<p>And finally, PyTorch expects the color channel to be the first
+dimension but it's the third dimension in the PIL image and Numpy array.
+You can reorder dimensions using <a
+href="https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.ndarray.transpose.html"><code>ndarray.transpose</code></a>.
+The color channel needs to be first and retain the order of the other
+two dimensions.</p>
+</section>
+<div class="cell code" data-execution_count="46">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_image(image_path):</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    pil_image <span class="op">=</span> Image.<span class="bu">open</span>(image_path)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span><span class="al">TODO</span><span class="co">: Process a PIL image for use in a PyTorch model</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">## Resize</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    pil_image <span class="op">=</span> pil_image.resize((<span class="dv">256</span>, <span class="dv">256</span>))</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Center crop</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    width, height <span class="op">=</span> pil_image.size   <span class="co"># Get dimensions</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    new_width, new_height <span class="op">=</span> <span class="dv">224</span>, <span class="dv">224</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    left <span class="op">=</span> <span class="bu">round</span>((width <span class="op">-</span> new_width) <span class="op">/</span> <span class="dv">2</span>)</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    top <span class="op">=</span> <span class="bu">round</span>((height <span class="op">-</span> new_height) <span class="op">/</span> <span class="dv">2</span>)</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    right <span class="op">=</span> width <span class="op">-</span> (width <span class="op">-</span> new_width) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    bottom <span class="op">=</span> height <span class="op">-</span> (height <span class="op">-</span> new_height) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Crop the center of the image</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>    pil_image <span class="op">=</span> pil_image.crop((left, top, right, bottom))</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert color channels from 0-255 to 0-1</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>    np_image <span class="op">=</span> np.array(pil_image) <span class="op">/</span> <span class="dv">255</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalize for the model</span></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>    mean <span class="op">=</span> np.array([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>])</span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>    std <span class="op">=</span> np.array([<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>    np_image <span class="op">=</span> (np_image <span class="op">-</span> mean) <span class="op">/</span> std</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Transpose color channels to the first dimension</span></span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>    np_image <span class="op">=</span> np_image.transpose((<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to Float Tensor</span></span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>    tensor <span class="op">=</span> torch.from_numpy(np_image)</span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a>    tensor <span class="op">=</span> tensor.<span class="bu">type</span>(torch.FloatTensor)</span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Return the processed tensor</span></span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tensor</span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a>    </span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>To check your work, the function below converts a PyTorch tensor and
+displays it in the notebook. If your <code>process_image</code> function
+works, running the output through this function should return the
+original image (except for the cropped out portions).</p>
+</div>
+<div class="cell code" data-execution_count="47">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> imshow(image, ax<span class="op">=</span><span class="va">None</span>, title<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Imshow for Tensor.&quot;&quot;&quot;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> ax <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>        fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> image.numpy().transpose((<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">0</span>))</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    mean <span class="op">=</span> np.array([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>])</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    std <span class="op">=</span> np.array([<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> std <span class="op">*</span> image <span class="op">+</span> mean</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> np.clip(image, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    ax.imshow(image)</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ax</span></code></pre></div>
+</div>
+<section id="class-prediction" class="cell markdown">
+<h2>Class Prediction</h2>
+<p>Once you can get images in the correct format, it's time to write a
+function for making predictions with your model. A common practice is to
+predict the top 5 or so (usually called top-<span
+class="math inline"><em>K</em></span>) most probable classes. You'll
+want to calculate the class probabilities then find the <span
+class="math inline"><em>K</em></span> largest values.</p>
+<p>To get the top <span class="math inline"><em>K</em></span> largest
+values in a tensor use <a
+href="http://pytorch.org/docs/master/torch.html#torch.topk"><code>x.topk(k)</code></a>.
+This method returns both the highest <code>k</code> probabilities and
+the indices of those probabilities corresponding to the classes. You
+need to convert from these indices to the actual class labels using
+<code>class_to_idx</code> which hopefully you added to the model or from
+an <code>ImageFolder</code> you used to load the data (<a
+href="#Save-the-checkpoint">see here</a>). Make sure to invert the
+dictionary so you get a mapping from index to class as well.</p>
+<p>Again, this method should take a path to an image and a model
+checkpoint, then return the probabilities and classes.</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>probs, classes <span class="op">=</span> predict(image_path, model)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(probs)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classes)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> [ <span class="fl">0.01558163</span>  <span class="fl">0.01541934</span>  <span class="fl">0.01452626</span>  <span class="fl">0.01443549</span>  <span class="fl">0.01407339</span>]</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> [<span class="st">&#39;70&#39;</span>, <span class="st">&#39;3&#39;</span>, <span class="st">&#39;45&#39;</span>, <span class="st">&#39;62&#39;</span>, <span class="st">&#39;55&#39;</span>]</span></code></pre></div>
+</section>
+<div class="cell code" data-execution_count="48">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict(image_path, model, topk<span class="op">=</span><span class="dv">5</span>, device<span class="op">=</span><span class="st">&quot;cuda&quot;</span>):</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&#39;&#39;&#39; Predict the class (or classes) of an image using a trained deep learning model.</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">    &#39;&#39;&#39;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    processed_image <span class="op">=</span> process_image(image_path)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    processed_image <span class="op">=</span> processed_image.unsqueeze(<span class="dv">0</span>)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Move to device</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    processed_image <span class="op">=</span> processed_image.to(device)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    model.<span class="bu">eval</span>()</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Perform inference</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>        ps <span class="op">=</span> torch.exp(model(processed_image))</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Map class indices to flower names</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>    idx_to_flower <span class="op">=</span> {v: cat_to_name[k] <span class="cf">for</span> k, v <span class="kw">in</span> model.class_to_idx.items()}</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get top K predictions and their corresponding flower names</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>    top_ps, top_classes <span class="op">=</span> ps.topk(topk, dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>    predicted_flowers <span class="op">=</span> [idx_to_flower[i] <span class="cf">for</span> i <span class="kw">in</span> top_classes.tolist()[<span class="dv">0</span>]]</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> top_ps.tolist()[<span class="dv">0</span>], predicted_flowers</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span><span class="al">TODO</span><span class="co">: Implement the code to predict the class from an image file</span></span></code></pre></div>
+</div>
+<section id="sanity-checking" class="cell markdown">
+<h2>Sanity Checking</h2>
+<p>Now that you can use a trained model for predictions, check to make
+sure it makes sense. Even if the testing accuracy is high, it's always
+good to check that there aren't obvious bugs. Use
+<code>matplotlib</code> to plot the probabilities for the top 5 classes
+as a bar graph, along with the input image. It should look like
+this:</p>
+<p><img src='assets/inference_example.png' width=300px></p>
+<p>You can convert from the class integer encoding to actual flower
+names with the <code>cat_to_name.json</code> file (should have been
+loaded earlier in the notebook). To show a PyTorch tensor as an image,
+use the <code>imshow</code> function defined above.</p>
+</section>
+<div class="cell code" data-execution_count="49">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Display an image along with the top 5 classes</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># load the model</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> load_checkpoint(<span class="st">&quot;checkpoint.pth&quot;</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>device <span class="op">=</span> torch.device(<span class="st">&quot;cuda&quot;</span> <span class="cf">if</span> torch.cuda.is_available() <span class="cf">else</span> <span class="st">&quot;cpu&quot;</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> model.to(device)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="co"># print(device)</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="50">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> classify_random_image(test_dir, model, cat_to_name):</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Pick a random image from the test folder</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    random_label_idx <span class="op">=</span> random.choice(os.listdir(test_dir))</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    random_image_file <span class="op">=</span> random.choice(os.listdir(os.path.join(test_dir, random_label_idx))) </span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    image_path <span class="op">=</span> os.path.join(test_dir, random_label_idx, random_image_file)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    actual_flower_name <span class="op">=</span> cat_to_name[random_label_idx]</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process the image</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> process_image(image_path)</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Predict the image using the model</span></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>    top_ps, top_classes <span class="op">=</span> predict(image_path, model)</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>    top1_flower_name <span class="op">=</span> top_classes[<span class="dv">0</span>]</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Determine if the image is classified correctly</span></span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> top1_flower_name <span class="op">==</span> actual_flower_name:</span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>        classified_correctly <span class="op">=</span> <span class="st">&quot;Yes, Top Prediction&quot;</span> </span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> actual_flower_name <span class="kw">in</span> top_classes:</span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>        classified_correctly <span class="op">=</span> <span class="st">&quot;Yes in Top 5 Prediction&quot;</span> </span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: </span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>        classified_correctly <span class="op">=</span> <span class="st">&quot;No&quot;</span> </span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Display a horizontal bar graph of predictions</span></span>
+<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a>    plt.barh(top_classes, top_ps)</span>
+<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">&quot;Actual Class = </span><span class="sc">{}</span><span class="st"> </span><span class="ch">\n</span><span class="st"> Correctly Classified = </span><span class="sc">{}</span><span class="st">&quot;</span>.<span class="bu">format</span>(actual_flower_name, classified_correctly))</span>
+<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Display the original image</span></span>
+<span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a>    imshow(image)</span>
+<span id="cb19-33"><a href="#cb19-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-34"><a href="#cb19-34" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="52">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>classify_random_image()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_fe12a43a7f7544b4b13383f36d1ad003/7fe96a415e74ac9ffdd4ea6f4ae5d76e9dc93c9a.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_fe12a43a7f7544b4b13383f36d1ad003/b715488ad92a7c56f1814cd3d8bd421be45bff9b.png" /></p>
+</div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
